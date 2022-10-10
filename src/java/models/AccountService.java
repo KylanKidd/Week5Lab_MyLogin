@@ -12,9 +12,9 @@ package models;
 public class AccountService {
     
     
-    private String login1;
-    private String login2;
-    private String password;
+    public String login1;
+    public String login2;
+    public String password;
 
     public AccountService() {
         login1 = "abe"; 
@@ -28,19 +28,19 @@ public class AccountService {
         this.password = password;
     }
 
-    public String getUsername1() {
+    public String getlogin1() {
         return login1;
     }
 
-    public void setUsername1(String username1) {
+    public void setlogin1(String username1) {
         this.login1 = login1;
     }
 
-    public String getUsername2() {
+    public String getlogin2() {
         return login2;
     }
 
-    public void setUsername2(String username2) {
+    public void setlogin2(String username2) {
         this.login2 = login2;
     }
 
