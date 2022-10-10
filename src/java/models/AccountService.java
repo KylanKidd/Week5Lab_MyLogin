@@ -22,7 +22,7 @@ public class AccountService {
         password = "password";
     }
 
-    public AccountService(String username1, String username2, String password) {
+    public AccountService(String login1, String login2, String password) {
         this.login1 = login1;
         this.login2 = login2;
         this.password = password;
@@ -32,7 +32,7 @@ public class AccountService {
         return login1;
     }
 
-    public void setlogin1(String username1) {
+    public void setlogin1(String login1) {
         this.login1 = login1;
     }
 
@@ -40,7 +40,7 @@ public class AccountService {
         return login2;
     }
 
-    public void setlogin2(String username2) {
+    public void setlogin2(String login2) {
         this.login2 = login2;
     }
 

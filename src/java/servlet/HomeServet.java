@@ -33,11 +33,18 @@ public class HomeServet extends HttpServlet {
          String login1 = request.getParameter("username");
         String login2 = request.getParameter("username");
         String password = request.getParameter("password");
-        String username;
+     
         
      if(login1 == login1 || password == password) {
                 request.setAttribute("login1", "abe");
                 request.setAttribute("hello", true);
+              getServletContext().getRequestDispatcher("/WEB-INF/home.jsp")
+                .forward(request,response);
+    
+            }
+     else if(login2 == login2 || password == password) {
+                request.setAttribute("login1", "barb");
+                request.setAttribute("hello2", true);
               getServletContext().getRequestDispatcher("/WEB-INF/home.jsp")
                 .forward(request,response);
     
