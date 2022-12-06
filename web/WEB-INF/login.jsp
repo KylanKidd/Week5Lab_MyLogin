@@ -12,11 +12,13 @@
         <title>Login Page</title>
     </head>
     <body>
-      <h1>Login</h1>
-            <form method="post" action="login">
-            Username: <input type="text" name="username"><br>
-            Password: <input type="text" name="password"><br>
-            <input type="submit" value="submit">
+        <h2>Login</h2>
+        <form action="login" method="post">
+            Username: <input type="text" name="username" value="${sessionuser.username}"><br>
+            Password: <input type="password" name="password" value="${sessionuser.password}"><br>
+            <input type="submit" value="Log-in">
         </form>
+            <p style="color: green">${logoutmsg}</p>
+            <p style="color: red">${invalid}</p>
     </body>
 </html>

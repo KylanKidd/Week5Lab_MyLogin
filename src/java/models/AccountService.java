@@ -7,55 +7,19 @@ package models;
 
 /**
  *
- * @author Kylan Kidd
+ * @author Kylan
  */
-public class AccountService {
-    
-    
-    public String login1;
-    public String login2;
-    public String password;
-
-    public AccountService() {
-        login1 = "abe"; 
-        login2 = "barb";
-        password = "password";
+public class AccountService
+{
+//    Non - static method
+    public User login (String username, String password)
+    {
+        User user = null;
+        if ((username.equals("abe") || username.equals("barb"))&& password.equals("password"))
+        {
+            user = new User(username, null);
+        }
+        return user;
     }
-
-    public AccountService(String login1, String login2, String password) {
-        this.login1 = login1;
-        this.login2 = login2;
-        this.password = password;
-    }
-
-    public String getlogin1() {
-        return login1;
-    }
-
-    public void setlogin1(String login1) {
-        this.login1 = login1;
-    }
-
-    public String getlogin2() {
-        return login2;
-    }
-
-    public void setlogin2(String login2) {
-        this.login2 = login2;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-    
-    
 }
-
-    
-    
-    
 
